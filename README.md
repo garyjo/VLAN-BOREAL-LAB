@@ -1,7 +1,7 @@
 # VLAN-BOREAL-LAB
 Creation de VLAN pour les besoins de laboratoire au college Boreal Toronto
 
-Switch 
+Switch  
 // Configuration initiale: Nom et mot de passe 
 ```
 Switch>
