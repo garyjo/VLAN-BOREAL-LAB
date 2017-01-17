@@ -3,7 +3,7 @@ Creation de VLAN pour les besoins de laboratoire au college Boreal Toronto
 
 Switch 
 // Configuration initiale: Nom et mot de passe 
-
+```
 Switch>
 Switch>enable
 Switch#config t
@@ -19,9 +19,9 @@ switch_principal(config-line)#password cisco
 switch_principal(config-line)#login
 switch_principal(config-line)#exit
 switch_principal(config)#enable secret cisco
-
+```
 // Creation des VLANs
-
+```
 switch_principal(config)#vlan 10
 switch_principal(config-vlan)#name administration
 switch_principal(config-vlan)#vlan 20
@@ -33,7 +33,7 @@ switch_principal(config-vlan)#name brice
 switch_principal(config-vlan)#exit
 switch_principal(config)#exit
 switch_principal#
-
+```
 
 switch_principal#sh vlan
 // Ajouter les ports aux differents VLANs 
