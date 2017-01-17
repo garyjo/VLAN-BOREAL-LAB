@@ -35,8 +35,11 @@ switch_principal(config)#exit
 switch_principal#
 ```
 
+```
 switch_principal#sh vlan
+```
 // Ajouter les ports aux differents VLANs 
+```
 
 switch_principal#config t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -58,17 +61,21 @@ switch_principal#
 
 switch_principal#
 switch_principal#copy run start
+```
 
 // Creation du Trunk Inter- VLAN
 
+```
 switch_principal(config)#int g0/1
 switch_principal(config-if)#switchpor mode trunk
+```
 
 -----------------------
 
 Routeur : 
-// Configuration initiale du routeur.
+// Configuration initiale du routeur.  
 
+```
 Router>
 Router>en
 Router#config t
@@ -88,9 +95,11 @@ routeur_lab(config-line)#login
 routeur_lab(config-line)#exit
 routeur_lab(config)#service password-en
 routeur_lab(config)#service password-encryption 
+```
 
 // Configuration des sous-interfaces pour Inter-VLAN
 
+```
 routeur_lab(config)#int g0/0.10
 
 routeur_lab(config-subif)#encapsulation dot1Q 10
@@ -109,3 +118,4 @@ routeur_lab(config-subif)#encapsulation dot1Q 40
 routeur_lab(config-subif)#ip address 10.13.237.145 255.255.255.240
 routeur_lab(config-subif)#no sh
 routeur_lab(config-subif)#
+```
