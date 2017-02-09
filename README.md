@@ -106,7 +106,7 @@ routeur_lab(config)#service password-encryption
 routeur_lab(config)#int g0/0.10
 
 routeur_lab(config-subif)#encapsulation dot1Q 10
-routeur_lab(config-subif)#ip address 10.13.237.1 255.255.255.240
+routeur_lab(config-subif)#ip address 10.13.237.254 255.255.255.240
 routeur_lab(config-subif)#no sh
 routeur_lab(config-subif)#int g0/0.20
 routeur_lab(config-subif)#encapsulation dot1Q 20
@@ -121,4 +121,13 @@ routeur_lab(config-subif)#encapsulation dot1Q 40
 routeur_lab(config-subif)#ip address 10.13.237.145 255.255.255.240
 routeur_lab(config-subif)#no sh
 routeur_lab(config-subif)#
+```
+
+// Configuration des sous-interfaces pour Inter-VLAN
+
+```
+routeur_lab(config)#int g1/0
+routeur_lab(config-subif)#ip address 10.13.237.253 255.255.255.240
+routeur_lab(config-subif)#no sh
+routeur_lab(config)#ip route 0.0.0.0 0.0.0.0 g1/0
 ```
