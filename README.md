@@ -126,8 +126,8 @@ routeur_lab(config-subif)#
 // Configuration des sous-interfaces pour Inter-VLAN
 
 ```
-routeur_lab(config)#int g1/0
+routeur_lab(config)#int g0/1
 routeur_lab(config-subif)#ip address 10.13.237.253 255.255.255.240
 routeur_lab(config-subif)#no sh
-routeur_lab(config)#ip route 0.0.0.0 0.0.0.0 g1/0
+routeur_lab(config)#ip route 0.0.0.0 0.0.0.0 g0/1
 ```
