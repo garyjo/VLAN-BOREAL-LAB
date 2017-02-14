@@ -1,0 +1,23 @@
+
+
+============================ Setup Router
+
+int g0/0.10
+encapsulation dot1Q 10
+ip address 10.13.237.254 255.255.255.240
+no sh
+
+int g0/0.20
+encapsulation dot1Q 20
+ip address 10.13.237.81 255.255.255.240
+no sh
+
+int g0/0.30
+encapsulation dot1Q 30
+ip address 10.13.237.113 255.255.255.240
+no sh
+
+int g0/0.40
+encapsulation dot1Q 40
+ip address 10.13.237.145 255.255.255.240
+no sh
