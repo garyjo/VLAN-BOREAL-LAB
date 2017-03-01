@@ -102,7 +102,7 @@ routeur_lab(config-subif)#
 A revoir le port sortant 
 ```
 routeur_lab(config)#int g0/1
-routeur_lab(config-subif)#ip address 10.13.237.14 255.255.255.128
+routeur_lab(config-subif)#ip address 10.13.237.2 255.255.255.128
 routeur_lab(config-subif)#no sh
 routeur_lab(config)#ip route 0.0.0.0 0.0.0.0 g0/1
 ```
